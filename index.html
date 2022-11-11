@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-comerce</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/75f2fc5bbe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="load__gif">
+        <title>Academlo Logo</title>
+        <g>
+          <g>
+            <path
+              d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z">
+            </path>
+            <path
+              d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+            </path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <section class="container">
+      <header class="header">
+        <nav class="nav-bar">
+          <div class="bar-left">
+            <div class="box-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48.92 56.48"
+                class="nav__logo-icon"
+              >
+                <g>
+                  <g>
+                    <!-- <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z"></path> -->
+                    <path
+                      d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <p class="name-logo">Store</p>
+            </div>
+            <div class="nav__menu">
+              <div class="nav__close" id="nav-close">
+                <i class="fa-sharp fa-solid fa-x"></i>
+              </div>
+              <ul class="menu">
+                <li class="menu-uno">
+                  <a href="#home">Home</a>
+                </li>
+                <li class="menu-dos">
+                  <a href="#products">Products</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bar-rigth">
+            <li class="icon">
+              <i class="fa-regular fa-moon"></i>
+            </li>
+            <li class="icon-cart icon">
+              <i class="fa-solid fa-shop"></i>
+              <span id="cart-count" class="count">0</span>
+            </li>
+            <li class="menu-hamburger icon">
+              <i class="fa-solid fa-bars"></i>
+            </li>
+          </div>
+        </nav>
+      </header>
+      <div class="cart">
+        <div class="cart__close" id="cart__close">
+          <i class="fa-sharp fa-solid fa-x"></i>
+        </div>
+        <h2>my Cart</h2>
+        <div class="content-product-cart-shop">
+          <div class="cart__empty">
+            <img src="./src/img/empty-cart.png" alt="cart-empty" />
+          </div>
+        </div>
+
+        <div class="container-total-cart-shop">
+          <h3></h3>
+        </div>
+      </div>
+      <main class="main" id="home">
+        <div class="main__container">
+          <div class="main-img">
+            <img src="./src/img/featured2.png" alt="" />
+          </div>
+          <div class="main-data">
+            <h1 class="title">
+              New sweatshirt <br />
+              COLLECTIONS 2022
+            </h1>
+            <p>
+              Latest arrival of the new Hanes Midweight Crewneck sweatshirt
+              imported from the 2022 series, with a modern design.
+            </p>
+            <p>$14.00</p>
+            <div class="btn">
+              <a class="btn_dis">Discover</a>
+              <button class="btn_car">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-products" id="products">
+          <div class="product" data-filter="all">
+            <h4 class="title-product">Show all</h4>
+            <span class="stock-products">show all products</span>
+          </div>
+          <div class="product" data-filter=".hoodies">
+            <h4 class="title-product">Hoodies</h4>
+            <span class="stock-products">3 products</span>
+          </div>
+          <div class="product" data-filter=".shirts">
+            <h4 class="title-product">Shirts</h4>
+            <span class="stock-products">4 products</span>
+          </div>
+          <div class="product" data-filter=".sweatshirt">
+            <h4 class="title-product">Sweatshirts</h4>
+            <span class="stock-products">4 products</span>
+          </div>
+        </div>
+        <div class="box-stock">
+          <!-- <div class="card-product">
+                    <div class="box-img">
+                        <img src="./src/img/featured1.png" alt="">
+                    </div>
+                    <div class="product-data">
+                        <p class="data-price">$ 14.00 <span>Stock: 15</span></p>
+                        <p class="name-product">Hoodies</p>
+                        <button class="add">+</button>
+                    </div>   
+                </div>
+                <div class="card-product">
+                    <div class="box-img">
+                        <img src="./src/img/featured2.png" alt="">
+                    </div>
+                    <div class="product-data">
+                        <p class="data-price">$ 14.00 <span>Stock: 15</span></p>
+                        <p class="name-product">Hoodies</p>
+                        <button class="add">+</button>
+                    </div>   
+                </div>
+                <div class="card-product">
+                    <div class="box-img">
+                        <img src="./src/img/featured3.png" alt="">
+                    </div>
+                    <div class="product-data">
+                        <p class="data-price">$ 14.00 <span>Stock: 15</span></p>
+                        <p class="name-product">Hoodies</p>
+                        <button class="add">+</button>
+                    </div>   
+                </div> -->
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer-info">
+            <h4 class="info-title">Our information</h4>
+            <p>Toluca - México</p>
+          </div>
+          <div class="footer-info">
+            <h4 class="info-title">About Us</h4>
+            <p>Support Center</p>
+            <p>Customer Support</p>
+            <p>About Us</p>
+            <p>Copy Right</p>
+          </div>
+          <div class="footer-info">
+            <h4 class="info-title">Product</h4>
+            <p>Hoodies</p>
+            <p>Shirts</p>
+            <p>Sweatshirts</p>
+          </div>
+          <div class="footer-info">
+            <h4 class="info-title">Social</h4>
+            <div class="info-social">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <span class="copy-R">© ACADEMLO. All rigths reserved</span>
+      </footer>
+    </section>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
